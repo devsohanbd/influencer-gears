@@ -157,6 +157,23 @@ header{
     font-weight: 700;
     margin: 5px 0;
 }
+.see-more{
+    color: rgba(224, 44, 109, 0.87);
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    padding: 3rem 0;
+    float: right;   
+}
+.see-more > a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+}
 /* Popular-collection section End */
 
 /* Feature-section Start */
@@ -169,8 +186,11 @@ header{
     margin: 10rem auto;
 }
 .feature-image{
-    width: 40.4rem;
+    max-width: 40.4rem;
     border-radius: 7px;  
+}
+.feature-content{
+    padding-right: 7rem;
 }
 .feature-title{
     color: #0A0826;
@@ -184,7 +204,8 @@ header{
     font-size: 1.6rem;
     font-weight: 700;
     max-width: 50rem;
-    padding: 16px 0;   
+    padding: 16px 0;
+    margin: 0 auto; 
 }
 .join-now{
     color: #FFF;
@@ -226,7 +247,7 @@ header{
     font-weight: 700;
     padding-top: 1rem;
 }
-.social-icons > .fa-brands{
+.social-icons .fa-brands{
 font-size: 3rem;
 padding: 1rem;
 }
@@ -265,6 +286,9 @@ padding-top: 3rem;
         text-align: center;
         margin: 0 auto;  
     }
+    .banner-img img{
+        max-width: auto;
+    }
     .book-now{
         margin: auto;
         display: block;
@@ -284,6 +308,10 @@ padding-top: 3rem;
     .popular-collection-container{
         padding: 0 1rem;
     }
+    .see-more{
+        padding: 0;
+        float: right;   
+    }
     .feature-section{
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -291,14 +319,15 @@ padding-top: 3rem;
         padding: 0 2em;
         text-align: center;
     }
-    .feature-image{
-        width: 40.4rem;
-        border-radius: 7px;
-        padding-top: 4rem;  
+    .feature-content{
+        padding-right: 0;
     }
     .footer-section{
         padding: 0rem 2rem;
         padding-top: 5rem;
+    }
+    .join-now{
+        margin-bottom: 4rem;
     }
 
 }
